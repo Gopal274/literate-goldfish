@@ -13,14 +13,14 @@ body {
 }
 .main-box {
   width: 80%;
-  height: 500px;
+  height: auto;
   border-radius: 25px;
   padding: 30px;
 }
 .main-box .navbar .navbar-brand {
   font-size: 25px;
   font-weight: bold;
-  font-family: sans-sarif;
+  font-family: sans-serif;
   color: #fc91bc;
 }
 .main-box .navbar .navbar-brand:hover {
@@ -31,7 +31,33 @@ body {
   font-family: sans-sarif;
   color: #fc91bc !important;
 }
+/*start login code*/
 
+.main-box .login-box {
+  width: 80%;
+  padding: 0 20px;
+}
 
+.main-box .login-box h1 {
+  color: #fc91bc;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
 
+.main-box .login-box label {
+  color: #fc91bc;
+  font-family: sans-serif;
+}
 
+.main-box .login-box input {
+  border: none !important;
+  border-bottom: 2px solid #fc91bc !important;
+  box-shadow: none;
+}
+.main-box .login-box button {
+  background-image: #fc91bc !important;
+  box-shadow: none !important;
+  font-size: 22px !important;
+  border: none !important;
+}
