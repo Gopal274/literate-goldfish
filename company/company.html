@@ -9,12 +9,13 @@
     <script src="../common/js/bootstrap.bundle.min.js"></script>
     <title>Company</title>
   </head>
+
   <body>
     <div class="container bg-white main-box">
       <header>
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
-            <a href="#" class="navbar-brand">brand logo</a>
+            <a href="#" class="navbar-brand">Brand Logo</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -30,38 +31,48 @@
               <div class="navbar-nav w-100 justify-content-end">
                 <a href="#" class="nav-link">Home</a>
                 <a href="#" class="nav-link">Portfolio</a>
-                <a href="#" class="nav-link">About us</a>
+                <a href="#" class="nav-link">About Us</a>
                 <a href="#" class="nav-link">Contact</a>
-                <a href="#" class="nav-link btn bg-info">Sign up</a>
+                <a href="#" class="nav-link btn bg-info">Sign Up</a>
               </div>
             </div>
           </div>
         </nav>
       </header>
-      <div class="row">
-        <div class="col-md-6">
 
-          <div class="login-box"></div>          
-          
+      <main class="row">
+        <section class="col-md-6">
+          <h1 class="mb-3">Welcome</h1>
+          <form>
+            <label for="brand-code-1">Brand Code</label>
+            <input type="text" id="brand-code-1" class="form-control mb-3" />
+            <label for="brand-code-2">Brand Code</label>
+            <input type="text" id="brand-code-2" class="form-control mb-3" />
+            <label for="brand-code-3">Brand Code</label>
+            <input type="text" id="brand-code-3" class="form-control mb-3" />
+            <div align="end"><a href="#">Student Login Form</a></div>
+            <button type="submit" class="btn btn-danger mb-3 mt-3 w-100">
+              Sign In
+            </button>
+          </form>
+        </section>
 
-
-            <h1 class="mb-3">Welcome</h1>
-            <form >
-            <label for="brand-code">Brand code</label>
-            <input type="text" class="form-control mb-3">
-            <label for="brand-code">Brand code</label>
-            <input type="text" class="form-control mb-3">
-            <label for="brand-code">Brand code</label>
-            <input type="text" class="form-control mb-3">
-           <div align="end"> <a href="#">student login form</a></div>
-            <button class="btn btn-danger mb-3 mt-3 w-100  ">Sign in</button>
- 
- 
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6">welcome</div>
-      </div>
+        <section class="col-md-6">
+          <h1 class="mb-3">Sign Up</h1>
+          <form>
+            <label for="signup-code-1">Brand Code</label>
+            <input type="text" id="signup-code-1" class="form-control mb-3" />
+            <label for="signup-code-2">Brand Code</label>
+            <input type="text" id="signup-code-2" class="form-control mb-3" />
+            <label for="signup-code-3">Brand Code</label>
+            <input type="text" id="signup-code-3" class="form-control mb-3" />
+            <div align="end"><a href="#">Student Login Form</a></div>
+            <button type="submit" class="btn btn-danger mb-3 mt-3 w-100">
+              Sign Up
+            </button>
+          </form>
+        </section>
+      </main>
     </div>
     <script src="js/company.js"></script>
   </body>
