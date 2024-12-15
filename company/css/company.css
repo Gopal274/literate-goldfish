@@ -17,3 +17,21 @@ body {
   border-radius: 25px;
   padding: 30px;
 }
+.main-box .navbar .navbar-brand {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-sarif;
+  color: #fc91bc;
+}
+.main-box .navbar .navbar-brand:hover {
+  color: #fc91bc;
+}
+.main-box .navbar .nav-link {
+  font-weight: bold;
+  font-family: sans-sarif;
+  color: #fc91bc !important;
+}
+
+
+
+
