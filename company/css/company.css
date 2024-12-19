@@ -128,3 +128,10 @@ body {
   height: auto;
   opacity: 1;
 }
+
+.login-box, .signup-box {
+  display: none;
+}
+.login-box.active, .signup-box.active {
+  display: block;
+}

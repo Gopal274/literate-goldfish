@@ -42,8 +42,47 @@ document.addEventListener("DOMContentLoaded", function() {
 
       let userString = JSON.stringify(userData);
       localStorage.setItem(allInput[0].value + "_brand", userString);
+      registerForm.reset();
+      swal("Good job!", "You clicked the button!", "success");
     } else {
-      alert("This brand code already exists");
+      swal("Good job!", "You clicked the button!", "success");
     }
   };
 });
+
+var signinBtn = document.querySelector(".signin-btn");
+var brandCode = document.querySelector("#brand-code");
+var username = document.querySelector("#username");
+var password = document.querySelector("#password");
+
+signinBtn.onclick = function(e){
+  e.preventDefault();
+  if(
+    brandcode.value && username.value && password.value != ""){
+      if(localStorage.getItem(brandcode.value) != null)
+      {
+        var allData = JSON.parse(localStorage.getItem(brandcode.value));
+        console.log(allData)
+        if(allData.username== user.value){
+          if(allData.password==password.value){
+            signinBtn.innerHTML = "please wait ..";
+            signinBtn.disabled = true;
+            setTimeout(function(){window.location="../dashboard/dashboard.html";},3000)
+          }
+          else{
+            swal("Good job!", "You clicked the button!", "success");
+          }
+        }
+        else{
+          swal("Good job!", "You clicked the button!", "success");
+        }
+      }
+      else{
+        swal("Good job!", "You clicked the button!", "success");
+      }
+    }
+    else{
+      swal("Good job!", "You clicked the button!", "success");
+    }
+  
+}
