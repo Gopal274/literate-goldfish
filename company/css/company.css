@@ -40,6 +40,13 @@ body {
   color: #fc91bc !important;
 }
 
+.main-box .navbar .btn {
+ background-color: #fc91bc !important;
+ color: #fff !important;
+}
+
+/*start login page*/
+
 .main-box .login-box,
 .main-box .signup-box {
   width: 80%;
