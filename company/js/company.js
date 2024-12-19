@@ -1,21 +1,49 @@
-// Select the buttons and boxes
-var signupBtn = document.querySelector(".signup-btn"); // Assuming you have a class for the signup button
-var loginBtn = document.querySelector(".login-btn"); // Assuming you have a class for the login button
-var loginBox = document.querySelector(".login-box");
-var signupBox = document.querySelector(".signup-box");
+document.addEventListener("DOMContentLoaded", function() {
+  var signupBtn = document.querySelector(".signup-btn");
+  var loginBtn = document.querySelector(".login-btn");
+  var loginBox = document.querySelector(".login-box");
+  var signupBox = document.querySelector(".signup-box");
 
-// Function to show the signup box and hide the login box
-signupBtn.addEventListener("click", function() {
-  signupBox.style.display = "block"; // Show signup box
-  loginBox.style.display = "none"; // Hide login box
+  signupBtn.onclick = function() {
+    signupBox.classList.add("active");
+    loginBox.classList.remove("active");
+    loginBtn.classList.remove("d-none");
+    signupBtn.classList.add("d-none");
+  };
+
+  loginBtn.onclick = function() {
+    signupBox.classList.remove("active");
+    loginBox.classList.add("active");
+    loginBtn.classList.add("d-none");
+    signupBtn.classList.remove("d-none");
+  };
+
+  var registerForm = document.querySelector(".signup-form");
+  var allInput = registerForm.querySelectorAll("INPUT");
+  var textArea = registerForm.querySelector("textarea");
+
+  registerForm.onsubmit = function(e) {
+    e.preventDefault();
+    registrationData();
+  };
+
+  const registrationData = () => {
+    // Check if brand code already exists in localStorage
+    if(localStorage.getItem(allInput[0].value + "_brand") == null) {
+      const userData = {
+        brandcode: allInput[0].value,
+        brandname: allInput[1].value,
+        website: allInput[2].value,
+        contact: allInput[3].value,
+        address: textArea.value,  // Assuming the address is in the first textarea
+        username: allInput[4].value,
+        password: allInput[5].value
+      };
+
+      let userString = JSON.stringify(userData);
+      localStorage.setItem(allInput[0].value + "_brand", userString);
+    } else {
+      alert("This brand code already exists");
+    }
+  };
 });
-
-// Function to show the login box and hide the signup box
-loginBtn.addEventListener("click", function() {
-  loginBox.style.display = "block"; // Show login box
-  signupBox.style.display = "none"; // Hide signup box
-});
-
-// Optional: Initialize the display state
-loginBox.style.display = "block"; // Show login box by default
-signupBox.style.display = "none"; // Hide signup box by default

@@ -110,6 +110,7 @@ body {
 .main-box .login-box{
   height: 0;
   opacity: 0;
+  overflow: hidden;
 }
 
 .main-box .login-box.active{
@@ -120,6 +121,8 @@ body {
 .main-box .signup-box{
   height: 0;
   opacity: 0;
+  overflow: hidden;
+  transition: 1s ease-in;
 }
 .main-box .signup-box.active{
   height: auto;
