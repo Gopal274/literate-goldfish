@@ -24,53 +24,66 @@
             <a href="#" class="nav-link">Portfolio</a>
             <a href="#" class="nav-link">Contact</a>
             <a href="#" class="nav-link">About Us</a>
-            <a href="#" class="nav-link btn bg-info">Sign Up</a>
+            <a href="#" class="nav-link btn login-btn bg-info">Sign Up</a>
+            <a href="#" class="nav-link btn signup-btn bg-info">Sign Up</a>
           </div>
         </div>
       </div>
     </nav>
+    
     <div class="row">
       <div class="col-md-6">
-        <div class="login-box">
-          <h1 class="mb-3">welcome</h1>
+        <div class="login-box active">
+          <h1 class="mb-3">Welcome</h1>
           <form>
-            <label for="brand-code">
-              Brand code</label>
-              <input type="" class="form-control mb-3">
-            <label for="brand-code">
-              Brand code</label>
-              <input type="" class="form-control mb-3">
-            <label for="brand-code">
-              Brand code</label>
-              <input type="" class="form-control mb-3">
-           <div align="end">
-              <a href="#">student login form</a>
-           </div>
-            <button class="btn btn-danger mt-3 mb-3 w-100">sign in</button>
+            <label for="brand-code">Brand Code</label>
+            <input type="text" class="form-control mb-3" id="brand-code" required>
+            
+            <label for="username">Username</label>
+            <input type="text" class="form-control mb-3" id="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" class="form-control mb-3" id="password" required>
+            
+            <div class="text-end">
+              <a href="#">Student Login Form</a>
+            </div>
+            <button class="btn btn-danger mt-3 mb-3 w-100" type="submit">Sign In</button>
           </form>
         </div>
+
         <div class="signup-box">
-         
+          <h1 class="mb-3">Sign Up</h1>
           <form>
-            <label for="brand-code">
-              Brand code</label>
-              <input type="" class="form-control mb-3">
-            <label for="brand-code">
-              Brand code</label>
-              <input type="" class="form-control mb-3">
-            <label for="brand-code">
-              Brand code</label>
-              <input type="" class="form-control mb-3">
-           <div align="end">
-              <a href="#">student login form</a>
-           </div>
-            <button class="btn btn-danger mt-3 mb-3 w-100">sign in</button>
+            <label for="s-brand-code">Brand Code</label>
+            <input type="text" class="form-control mb-3" id="s-brand-code" required>
+            
+            <label for="brand-name">Brand Name</label>
+            <input type="text" class="form-control mb-3" id="brand-name" required>
+            
+            <label for="website">Website</label>
+            <input type="text" class="form-control mb-3" id="website" required>
+            
+            <label for="contact">Contact</label>
+            <input type="text" class="form-control mb-3" id="contact" required>
+            
+            <label for="address">Address</label>
+            <textarea class="form-control mb-3" id="address" required></textarea <label for="s-username">Username</label>
+            <input type="text" class="form-control mb-3" id="s-username" required>
+            
+            <label for="s-password">Password</label>
+            <input type="password" class="form-control mb-3" id="s-password" required>
+            
+            <div class="text-end">
+              <a href="#">Student Login Form</a>
+            </div>
+            <button class="btn btn-danger mt-3 mb-3 w-100" type="submit">Sign Up</button>
           </form>
         </div>
       </div>
-      
+
       <div class="col-md-6">
-        
+        <img src="" class="w-100" alt="Descriptive Alt Text">
       </div>
     </div>
   </div>

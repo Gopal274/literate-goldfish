@@ -68,6 +68,7 @@ body {
 }
 
 .main-box .login-box input,
+.main-box .signup-box input,
 .main-box .signup-box input {
   border: none !important;
   border-bottom: 2px solid #fc91bc !important;
@@ -104,4 +105,23 @@ body {
     width: 95%;
     /* Adjust width for smaller screens */
   }
+}
+
+.main-box .login-box{
+  height: 0;
+  opacity: 0;
+}
+
+.main-box .login-box.active{
+  height: auto;
+  opacity: 1;
+}
+
+.main-box .signup-box{
+  height: 0;
+  opacity: 0;
+}
+.main-box .signup-box.active{
+  height: auto;
+  opacity: 1;
 }
